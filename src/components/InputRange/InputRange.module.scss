@@ -1,0 +1,62 @@
+.wrapper-range {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.rail {
+    display: flex;
+    flex: 1;
+    position: relative;
+    height: 8px;
+    background-color: #8c8888;
+    border-radius: 10px;
+}
+
+.process {
+    position: absolute;
+    height: 8px;
+    border-radius: 10px;
+    background-color: var(--primary-bg);
+    transition: all 0.5s ease;
+}
+
+.dot {
+    position: absolute;
+    padding: 10px;
+    border-radius: 999px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 0 3px 5px var(--sticky-header-box-shadow);
+    transition: left 0.5s ease;
+
+    &.dot_min {
+        background-color: var(--text-white);
+        border: 2px solid var(--primary-bg);
+    }
+
+    &.dot_max {
+        background-color: var(--primary-bg);
+        border: 2px solid #fff;
+    }
+
+    &.active {
+        padding: 12px;
+    }
+}
+
+.price-display {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+}
+
+.clear-transition {
+    transition: unset !important;
+}

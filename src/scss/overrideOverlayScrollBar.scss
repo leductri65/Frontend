@@ -1,0 +1,11 @@
+@import 'overlayscrollbars/overlayscrollbars.css';
+
+// horizontal and vertical scrollbar are 10px
+.os-theme-custom {
+    --os-size: 4px;
+    --os-handle-bg: var(--scroll-thumb-bg);
+    --os-handle-border-radius: 2px;
+    --os-handle-bg-hover: var(--scroll-thumb-bg);
+    --os-handle-bg-active: var(--scroll-thumb-bg);
+    z-index: 99;
+}

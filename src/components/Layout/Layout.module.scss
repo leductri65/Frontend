@@ -1,0 +1,9 @@
+.wrapper {
+    background-color: var(--layout-bg);
+    overflow: hidden;
+    display: -moz-flex;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-width: var(--min-width-layout);
+}

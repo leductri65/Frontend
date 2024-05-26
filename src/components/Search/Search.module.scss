@@ -1,0 +1,140 @@
+$colorBtnAndPlaceholder: var(--text-placeholder);
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+
+    position: relative;
+    border: 1px solid var(--border-search);
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    max-width: 440px;
+    background-color: var(--text-white);
+
+    &.is-collapse {
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        background-color: var(--text-white);
+        border: unset;
+    }
+}
+
+.btn-search {
+    font-size: 1.5rem;
+    padding: 4px 6px;
+    color: $colorBtnAndPlaceholder;
+}
+
+.btn-close {
+    font-size: 1.25rem;
+    padding: 4px 8px 4px 0;
+    color: $colorBtnAndPlaceholder;
+
+    &.btn-close-disabled {
+        opacity: 0;
+        pointer-events: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+.btn-play {
+    & > svg {
+        font-size: 1.625rem;
+        color: var(--text-primary);
+    }
+}
+
+.wrapper-input {
+    flex-grow: 1;
+}
+
+.input {
+    color: #000000;
+    line-height: 34px;
+    font-size: 0.875rem;
+
+    height: 34px;
+    width: 100%;
+
+    background-color: transparent;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+        color: $colorBtnAndPlaceholder;
+        opacity: 1;
+    }
+}
+
+.suggest-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: baseline;
+
+    width: 100%;
+    height: auto;
+    padding: 13px 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: var(--text-white);
+    z-index: 5;
+    overflow-x: hidden;
+
+    box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.suggest-item {
+    font-size: 0.875rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+
+    & svg {
+        font-size: 1.125rem;
+        color: var(--text-secondary);
+        position: relative;
+    }
+
+    &:hover {
+        background-color: var(--alpha-bg);
+    }
+
+    &:hover .btn-suggest-item {
+        display: flex;
+    }
+}
+
+.suggest-list--content {
+    max-height: var(--max-height-suggest-list);
+    width: 100%;
+}
+
+.title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0 10px 8px;
+}
+
+.btn-suggest-item {
+    margin: 0 4px;
+    padding: 11px;
+    display: none;
+
+    &:hover {
+        background-color: var(--alpha-bg);
+    }
+}

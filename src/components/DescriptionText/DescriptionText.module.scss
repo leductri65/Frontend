@@ -1,0 +1,19 @@
+.text {
+    color: var(--text-placeholder);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.33;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+
+    & a {
+        color: var(--text-placeholder);
+    }
+
+    & a:hover {
+        color: var(--text-link-hover);
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,62 @@
+.btn {
+    color: var(--text-primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 0.875rem;
+    white-space: nowrap;
+
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        -webkit-filter: brightness(0.9);
+        filter: brightness(0.9);
+    }
+
+    & svg {
+        line-height: 66%;
+    }
+
+    & * {
+        cursor: pointer;
+    }
+}
+
+.primary {
+    background-color: var(--blue-primary);
+}
+
+.secondary {
+    background-color: #dbdde0;
+}
+
+.transparent {
+    background-color: transparent;
+    &:hover {
+        -webkit-filter: unset;
+        filter: unset;
+        opacity: 0.6;
+    }
+}
+
+.is-border {
+    border: 1px solid currentColor;
+}
+
+.rounded {
+    overflow: hidden;
+    border-radius: 999px;
+}
+
+.disabled {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0.3;
+    cursor: none;
+}

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-family: inherit;
+    text-rendering: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+html {
+}
+
+body {
+    font-family: var(--font-inter);
+    background-color: var(--layout-bg);
+    color: var(--text-primary);
+    text-rendering: optimizeSpeed;
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+textarea {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: var(--scroll-thumb-bg);
+}
+
+span,
+a,
+p {
+    // text-wrap: nowrap;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}

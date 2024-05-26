@@ -1,0 +1,13 @@
+$smallMedia: #{'(max-width: 1025px)'};
+$mediumMedia: #{'(max-width: 1240px)'};
+$mediumLargeMedia: #{'(max-width: 1350px)'};
+$largeMedia: #{'(min-width: 1351px) and (max-width: 1591px)'};
+$largeExtendMedia: #{'(min-width: 1591px)'};
+
+:root {
+    --breakpoint-small: #{$smallMedia};
+    --breakpoint-medium: #{$mediumMedia};
+    --breakpoint-medium-large: #{$mediumLargeMedia};
+    --breakpoint-large: #{$largeMedia};
+    --breakpoint-large-extend: #{$largeExtendMedia};
+}

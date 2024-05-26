@@ -1,0 +1,17 @@
+:root {
+    --padding-section: 59px;
+    --height-header: 70px;
+    --height-filter: 50px;
+    --width-sidebar: 240px;
+    --width-sidebar-small: 70px;
+    --min-width-layout: 768px;
+    --max-height-suggest-list: calc(100vh - 180px);
+    --padding-bottom-sidebar: 54px;
+}
+
+@import './breakpoints.scss';
+@media #{$smallMedia} {
+    :root {
+        --padding-section: 29px;
+    }
+}

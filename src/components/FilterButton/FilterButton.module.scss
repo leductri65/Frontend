@@ -1,0 +1,12 @@
+.btn-filter {
+    position: fixed;
+    top: calc(var(--height-header) + 4px);
+    left: calc(var(--width-sidebar) + 4px);
+    z-index: 99;
+
+    padding: 8px;
+    font-size: 1.25rem;
+    color: var(--text-white);
+    background-color: #7ce4ed;
+    // pointer-events: stroke;
+}

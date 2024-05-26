@@ -1,0 +1,14 @@
+.wrapper {
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.logo {
+    background: var(--img-logo-not-found) center / contain no-repeat;
+    background-color: transparent;
+    line-height: 0;
+    width: 100px;
+    height: 100px;
+}

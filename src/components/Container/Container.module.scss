@@ -1,0 +1,33 @@
+.wrapper {
+    flex-grow: 1;
+    position: relative;
+}
+
+.envelop {
+    position: absolute;
+    inset: 0px;
+    margin-bottom: 0px;
+}
+
+.main {
+    width: auto;
+    height: 100%;
+    padding: 0 var(--padding-section);
+
+    max-width: 1442px;
+
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: var(--height-header);
+}
+
+// padding: 0 var(--padding-section);
+
+@import '../../scss/breakpoints.scss';
+@media #{$mediumMedia} {
+    .main {
+        margin-left: var(--width-sidebar-small);
+    }
+}

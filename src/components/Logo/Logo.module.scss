@@ -1,0 +1,44 @@
+.wrapper {
+    position: fixed;
+    top: -3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    height: var(--height-header);
+    width: var(--width-sidebar);
+    z-index: 99;
+    button {
+        display: flex;
+        background-color: transparent;
+    }
+    button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.main {
+    background: var(--img-logo-main) center / contain no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: var(--height-header);
+    background-color: transparent;
+    line-height: 0;
+    transition: background-image 0.3s ease-out 0.2s;
+}
+
+@import '../../scss/breakpoints.scss';
+@media #{$mediumMedia} {
+    .is-expanded.wrapper {
+        justify-content: center;
+        padding: unset;
+        width: var(--width-sidebar-small);
+    }
+
+    .is-expanded .main {
+        background-image: var(--img-logo-disk);
+        width: 45px;
+        height: 45px;
+    }
+}

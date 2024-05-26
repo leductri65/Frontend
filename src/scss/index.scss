@@ -1,0 +1,17 @@
+@import 'normalize.css'; // normalize library
+@import './overrideOverlayScrollBar.scss';
+@import './resetCSS.scss';
+
+@import './fontStyle.scss';
+@import './textColor.scss';
+@import './backgroundColor.scss';
+@import './image.scss';
+@import './gridLibrary.scss';
+@import './section.scss';
+@import './boxShadow.scss';
+
+// tailwind css
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

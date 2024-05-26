@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 100%;
+
+    .join {
+        flex-grow: 1;
+    }
+
+    &.wrapper-column {
+        flex-direction: column;
+    }
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+}
+
+.row {
+    width: 100%;
+    justify-content: flex-start;
+}

@@ -1,0 +1,79 @@
+.wrapper {
+    position: relative;
+    cursor: pointer;
+    height: inherit;
+    width: inherit;
+}
+
+.image {
+    position: relative;
+    border-radius: 8px;
+    line-height: 0;
+    background-color: var(--loading-bg);
+}
+
+.figure {
+    line-height: 0;
+    height: 0;
+    padding-bottom: 100%;
+    display: inline-block;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.thumbnail-transition {
+    transition: transform 0.7s;
+}
+
+.disk-transition {
+    transition: transform 0.3s linear;
+}
+
+.disk {
+    position: absolute;
+    right: -8%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+    cursor: default;
+    filter: unset;
+
+    line-height: 0;
+    height: 0;
+
+    // & button {
+    //     padding: 6px;
+    // }
+
+    // & button:hover {
+    //     background-color: hsla(0, 0%, 100%, 0.3);
+    // }
+
+    // & button svg {
+    //     font-size: 1.25rem;
+    // }
+
+    // & button i,
+    // & button img {
+    //     width: 20px;
+    //     height: 20px;
+    // }
+}

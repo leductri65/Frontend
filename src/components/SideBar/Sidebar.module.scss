@@ -1,0 +1,84 @@
+.wrapper {
+    width: var(--width-sidebar);
+    background-color: var(--sidebar-bg);
+    height: 100%;
+    position: relative;
+    padding: var(--height-header) 0 var(--padding-bottom-sidebar) 0;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s linear;
+    z-index: 10;
+    overflow: hidden;
+
+    display: flex;
+
+    & .navbar-main {
+        flex-shrink: 0;
+    }
+
+    & .wall-separator {
+        width: 80%;
+        margin: 15px 0 5px 0;
+        height: 0.5px;
+        flex-shrink: 0;
+    }
+}
+
+.btn-pull-sidebar {
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    padding: 12px;
+    background-color: var(--alpha-bg);
+
+    & svg {
+        font-size: 1rem;
+    }
+}
+
+.navbar {
+    &:hover .lib-setting button {
+        display: block;
+    }
+}
+
+.lib-setting {
+    $paddingSide: 28px;
+    position: relative;
+    padding: 10px $paddingSide 8px;
+
+    & * {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+    }
+
+    & button {
+        position: absolute;
+        display: none;
+        // top: -4px;
+        right: $paddingSide;
+        padding: 0 6px;
+        font-size: 1rem;
+
+        &:hover {
+            background-color: var(--alpha-bg);
+        }
+    }
+}
+
+@import '../../scss/breakpoints.scss';
+@media #{$mediumMedia} {
+    .wrapper {
+        position: fixed;
+        background-color: var(--sidebar-popup-bg);
+        width: var(--width-sidebar-small);
+
+        &.pulled {
+            width: var(--width-sidebar);
+        }
+    }
+
+    .banner {
+        display: none;
+    }
+}

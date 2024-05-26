@@ -1,0 +1,13 @@
+:root {
+    --img-logo-main: url('../assets/images/main_logo.svg');
+    --img-logo-disk: url('../assets/images/logo__disk-mp3.svg');
+    --img-logo-not-found: url('../assets/images/not_found.svg');
+    --empty-album-dark: url('../assets/images/empty-album-dark.png');
+    --empty-fav-song-dark: url('../assets/images/empty-fav-song-dark.png');
+    --empty-mv-dark: url('../assets/images/empty-mv-dark.png');
+    --empty-upload-dark: url('../assets/images/empty-upload-dark.png');
+    --episode-empty-1: url('../assets/images/episode-empty-1.png');
+    --empty-podcast-dark: url('../assets/images/empty-podcast-dark.png');
+
+    --mask-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.8) 10%, #fff 25%, #fff);
+}

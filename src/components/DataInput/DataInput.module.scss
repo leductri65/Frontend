@@ -1,0 +1,59 @@
+.input-wrap {
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.input {
+    & ~ span {
+        @apply absolute inset-x-1/2 bottom-0 h-px transition-all;
+
+        // transition: all 0.1s linear;
+    }
+
+    &:hover ~ span {
+        @apply bg-zinc-600 inset-x-0;
+    }
+
+    &:focus ~ span {
+        @apply bg-blue-600 inset-x-0;
+    }
+
+    // & .input.error + span {
+    //     background-color: red !important;
+    // }
+
+    // & .input.empty + span {
+    //     left: 0;
+    //     right: 0;
+    //     background-color: var(--text-link-hover) !important;
+    // }
+
+    // & ~ span {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 50%;
+    //     right: 50%;
+    //     height: 0.8px;
+    //     background-color: #000;
+    //     transition: all 0.1s linear;
+    // }
+
+    // &:focus-within span,
+    // &:hover span {
+    //     left: 0;
+    //     right: 0;
+    // }
+
+    // & .textarea {
+    //     width: 100%;
+    //     background-color: transparent;
+    // }
+}
+
+// .label {
+//     user-select: none;
+//     font-size: 1rem;
+//     font-weight: 600;
+//     color: var(--text-title);
+//     margin-right: 10px;
+//     text-wrap: nowrap;
+// }
